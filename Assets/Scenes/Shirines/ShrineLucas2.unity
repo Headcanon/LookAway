@@ -12126,7 +12126,9 @@ PrefabInstance:
       propertyPath: leftHandObj
       value: 
       objectReference: {fileID: 1380885005}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 170232110, guid: e4b1b35131ef912448de458a009cf7a4, type: 3}
+    - {fileID: 170232109, guid: e4b1b35131ef912448de458a009cf7a4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e4b1b35131ef912448de458a009cf7a4, type: 3}
 --- !u!4 &1374210695 stripped
 Transform:
@@ -12140,6 +12142,88 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1374210694}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1374210697 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3061684339311364016, guid: e4b1b35131ef912448de458a009cf7a4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1374210694}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1374210698 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3061684339320731088, guid: e4b1b35131ef912448de458a009cf7a4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1374210694}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &1374210699
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374210697}
+  serializedVersion: 2
+  m_Mass: 70
+  m_Drag: 0.5
+  m_AngularDrag: 2
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 1
+  m_Constraints: 112
+  m_CollisionDetection: 2
+--- !u!114 &1374210700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374210697}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 736312988c7eb5e4790fc631e4f9fd14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rdb: {fileID: 1374210699}
+  anim: {fileID: 1374210698}
+  currentCamera: {fileID: 725778544}
+  jumpspeed: 8
+  gravity: 20
+  wing: {fileID: 1804532249}
+  rightHandObj: {fileID: 1209996761}
+  leftHandObj: {fileID: 1380885005}
+--- !u!136 &1374210701
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374210697}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.2
+  m_Height: 1.6
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.8, z: 0}
+--- !u!114 &1374210705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374210697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ace0c6440704d249a2f2d7ceaf3f71b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rdb: {fileID: 1374210699}
+  anim: {fileID: 1374210698}
+  currentCamera: {fileID: 725778544}
+  jumpspeed: 8
+  gravity: 20
+  wing: {fileID: 1804532249}
+  rightHandObj: {fileID: 1209996761}
+  leftHandObj: {fileID: 1380885005}
 --- !u!1 &1380885004
 GameObject:
   m_ObjectHideFlags: 0
@@ -13288,6 +13372,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4174020898807472, guid: f1db347953317284cb9cd28732fc9224,
     type: 3}
   m_PrefabInstance: {fileID: 1795197843}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1804532249 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2753067547861573909, guid: e4b1b35131ef912448de458a009cf7a4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1374210694}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1813609844 stripped
 Transform:

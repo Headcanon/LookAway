@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LucasMovimento : MonoBehaviour
+public class LucasMovimento : MoveChanPhisical
 {
     // Start is called before the first frame update
     void Start()
